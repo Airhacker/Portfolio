@@ -1,0 +1,63 @@
+#home-page {
+  // Major Sections
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+  }
+  footer {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  //Everything Else on Page
+  button {
+    background: none;
+    border: 3px solid $dark-color;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $light-color;
+      background-color: $dark-color;
+    }
+  }
+
+  a {
+    border: 3px solid transparent;
+    padding: 1rem;
+    border-radius: 25px;
+    transition: 0.5s ease;
+
+    &:hover {
+      border-color: $dark-color;
+    }
+
+    &:focus {
+      background-color: $dark-color;
+      color: $light-color;
+    }
+  }
+}
+
+.nav-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

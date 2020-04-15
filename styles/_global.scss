@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+canvas {
+  display: block;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+//Font Sizes
+
+h1 {
+  font-size: $header1;
+  letter-spacing: 0.25rem;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+a,
+button,
+p {
+  font-size: $text;
+}
