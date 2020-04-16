@@ -58,6 +58,7 @@ p {
   background-size: cover;
   width: 85%;
   min-height: 90vh;
+  max-height: 90vh;
   background: $white;
   border-radius: 50px;
 }
@@ -75,7 +76,7 @@ p {
 
 .fa-adjust {
   color: $dark-color;
-  font-size: 2rem;
+  font-size: $text;
   margin: 1rem;
   cursor: pointer;
 }

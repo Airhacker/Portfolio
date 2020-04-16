@@ -42,6 +42,12 @@
 
   a {
     font-size: $header4;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      border-bottom: 3px solid $dark-color;
+    }
   }
 }
 
