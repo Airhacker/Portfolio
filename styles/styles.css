@@ -11,6 +11,9 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #1f295a;
+  margin: 0;
+  padding: 0;
 }
 
 canvas {
@@ -20,12 +23,13 @@ canvas {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1f295a;
 }
 
 h1 {
-  font-size: calc(5rem + 2vw);
+  font-size: calc(4rem + 2vw);
   letter-spacing: 0.25rem;
+  color: #344378;
 }
 
 h2 {
@@ -42,22 +46,59 @@ p {
   font-size: calc(2rem + 2vw);
 }
 
-#home-page header {
+.swiper-container {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 0rem;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 85%;
+  min-height: 90vh;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.swiper-slide-active {
+  -webkit-box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
+          box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+}
+
+.fa-adjust {
+  color: #1f295a;
+  font-size: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.home-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  min-height: 10vh;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  height: 80vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#home-page main {
+.home-heading {
+  min-height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,62 +106,70 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  min-height: 80vh;
 }
 
-#home-page footer {
-  min-height: 10vh;
+.home-heading h1 {
+  margin: 3rem 0rem;
+}
+
+.home-heading button {
+  border: 3px solid #1f295a;
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.home-heading button:hover {
+  background-color: #1f295a;
+  color: #ffffff;
+}
+
+.home-heading button:active {
+  color: #344378;
+}
+
+.social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
-#home-page button {
-  background: none;
-  border: 3px solid #102a43;
-  border-radius: 25px;
-  padding: 1rem 1.5rem;
-  margin: 1rem;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+.social-links a {
+  font-size: calc(1.5rem + 2vw);
 }
 
-#home-page button:hover {
-  color: #f5f5f5;
-  background-color: #102a43;
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#home-page a {
-  border: 3px solid transparent;
-  padding: 1rem;
-  border-radius: 25px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+.scroll h4 {
+  font-size: calc(1rem + 2vw);
+  color: #1f295a;
 }
 
-#home-page a:hover {
-  border-color: #102a43;
-}
-
-#home-page a:focus {
-  background-color: #102a43;
-  color: #f5f5f5;
-}
-
-.nav-panel {
+.color-mode {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +179,5 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

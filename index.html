@@ -6,59 +6,49 @@
     <title>Umair Ahmed | Software Developer</title>
 
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <section id="home-page">
-      <header>
-        <button>Color Mode</button>
-      </header>
-      <main>
-        <h1>Hello, I'm <br />Umair Ahmed</h1>
-
-        <button>Resume</button>
-        <div class="nav-panel">
-          <button id="project-button">Projects</button>
-          <button id="contact-button">Contact</button>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="home-container">
+            <div class="home-heading">
+              <h1>Hello, I'm <br />Umair Ahmed</h1>
+              <button>Resume</button>
+            </div>
+            <div class="social-links">
+              <a href="#">Github</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+          <div class="color-mode"><i class="fas fa-adjust"></i></div>
+          <div class="scroll"><h4>Swipe for more</h4></div>
         </div>
-      </main>
-      <footer>
-        <a href="#">Github</a>
-        <a href="#">LinkedIn</a>
-      </footer>
-    </section>
 
-    <section id="project-page">
-      <footer>
-        <h1>My Projects</h1>
-      </footer>
-      <main></main>
-      <footer></footer>
-    </section>
+        <div class="swiper-slide">
+          <h1>Projects</h1>
+        </div>
 
-    <section id="contact-page">
-      <header></header>
-      <main>
-        <h1>Contact Me</h1>
-        <form action="">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </main>
-      <footer></footer>
-    </section>
+        <div class="swiper-slide">
+          <h1>Contact</h1>
+        </div>
+      </div>
 
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
     <script src="./scripts/app.js"></script>
   </body>

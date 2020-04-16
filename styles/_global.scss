@@ -9,6 +9,9 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  background: $dark-color;
+  margin: 0;
+  padding: 0;
 }
 
 canvas {
@@ -18,7 +21,7 @@ canvas {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $dark-color;
 }
 
 //Font Sizes
@@ -26,6 +29,7 @@ a {
 h1 {
   font-size: $header1;
   letter-spacing: 0.25rem;
+  color: $special-color;
 }
 h2 {
   font-size: $header2;
@@ -37,4 +41,41 @@ a,
 button,
 p {
   font-size: $text;
+}
+
+// Page Settings
+
+.swiper-container {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 0rem;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 85%;
+  min-height: 90vh;
+  background: $white;
+  border-radius: 50px;
+}
+
+.swiper-slide-active {
+  //Box Shadow
+  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
+    4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
+}
+.swiper-pagination-bullet {
+  background: $white;
+}
+
+// Icon Settings
+
+.fa-adjust {
+  color: $dark-color;
+  font-size: 2rem;
+  margin: 1rem;
+  cursor: pointer;
 }
