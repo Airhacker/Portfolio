@@ -9,7 +9,6 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: $dark-color;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +20,7 @@ canvas {
 
 a {
   text-decoration: none;
-  color: $dark-color;
+  color: $special-color;
 }
 
 //Font Sizes
@@ -45,12 +44,13 @@ p {
 
 // Page Settings
 
-.swiper-container {
+.swiper1 {
   width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 0rem;
   min-width: 100%;
   min-height: 100vh;
+  background: $bg-color;
 }
 
 .swiper-slide {
@@ -61,15 +61,11 @@ p {
   max-height: 90vh;
   background: $white;
   border-radius: 50px;
+  @include nueOut;
 }
 
-.swiper-slide-active {
-  //Box Shadow
-  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999,
-    4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
-}
 .swiper-pagination-bullet {
-  background: $white;
+  background: $special-color;
 }
 
 // Icon Settings
@@ -78,5 +74,7 @@ p {
   color: $dark-color;
   font-size: $text;
   margin: 1rem;
+  border-radius: 50%;
   cursor: pointer;
+  @include nueOut;
 }

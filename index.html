@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div class="swiper-container">
+    <div class="swiper-container swiper1">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="home-container">
@@ -36,35 +36,54 @@
         </div>
 
         <div class="swiper-slide">
-          <div class="projects-container">
-            <div class="projects-heading">
-              <h1>Projects</h1>
-              <p>Here are some of the projects I have worked on</p>
-            </div>
-            <div class="projects-holder">
-              <div class="project 1">
-                <img src="./images/Aamir.jpg" alt="" />
-              </div>
-              <div class="project 1">
-                <img src="./images/Aamir.jpg" alt="" />
-              </div>
-              <div class="project 1">
-                <img src="./images/Aamir.jpg" alt="" />
-              </div>
-              <div class="project 1">
-                <img src="./images/Aamir.jpg" alt="" />
-              </div>
-              <div class="project 1">
-                <img src="./images/Aamir.jpg" alt="" />
-              </div>
-            </div>
+          <div class="projects-heading">
+            <h1>Projects</h1>
+            <p>Here are some of the projects I have worked on</p>
           </div>
-          <div class="color-mode"><i class="fas fa-adjust"></i></div>
+          <div class="swiper-container swiper2">
+            <div class="swiper-wrapper wrapper2">
+              <div class="swiper-slide slide2">
+                <img src="./images/Aamir.jpg" alt="" />
+              </div>
+              <div class="swiper-slide slide2">
+                <img src="./images/math-tutor.jpg" alt="" />
+              </div>
+              <div class="swiper-slide slide2">
+                <img src="./images/mirror-mirror.jpg" alt="" />
+              </div>
+              <div class="swiper-slide slide2">
+                <img src="./images/Travelly.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
           <div class="scroll"><h4>Swipe for more</h4></div>
         </div>
 
         <div class="swiper-slide">
-          <h1>Contact</h1>
+          <div class="contact-heading">
+            <h1>Contact Me</h1>
+          </div>
+
+          <form class="contact-form" action="">
+            <label for="text">
+              <input type="text" placeholder=" Name" required />
+            </label>
+            <label for="email">
+              <input type="email" placeholder=" Email" required />
+            </label>
+            <label for="message">
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder=" Message"
+              ></textarea>
+            </label>
+
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
 

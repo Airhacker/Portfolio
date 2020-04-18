@@ -12,12 +12,6 @@
   }
 }
 
-.projects-holder {
-  width: 90%;
-  margin: 0 auto;
-  min-height: 65vh;
-}
-
 .project {
   min-height: 30%;
   max-height: 30%;
@@ -27,5 +21,28 @@
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
+  }
+}
+
+.swiper2 {
+  min-width: 100%;
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.slide2 {
+  min-height: 25vh;
+  max-height: 25vh;
+  box-shadow: none;
+
+  margin: auto;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+    @include nueOut;
   }
 }

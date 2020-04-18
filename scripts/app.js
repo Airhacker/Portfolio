@@ -1,4 +1,5 @@
-let swiper = new Swiper(".swiper-container", {
+// Page swipe
+let swiper1 = new Swiper(".swiper1", {
   effect: "coverflow",
   loop: true,
   grabCursor: false,
@@ -15,5 +16,19 @@ let swiper = new Swiper(".swiper-container", {
     el: ".swiper-pagination",
     dynamicBullets: true,
     clickable: true,
+  },
+});
+
+// Project Swipe
+let swiper2 = new Swiper(".swiper2", {
+  grabCursor: true,
+  freeMode: true,
+  slidesPerView: "3",
+  direction: "vertical",
+  spaceBetween: 10,
+  mouseWheel: true,
+  loop: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });
