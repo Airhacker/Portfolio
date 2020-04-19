@@ -1,98 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Umair Ahmed | Software Developer</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Umair Ahmed | Software Developer</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body>
-    <div class="swiper-container swiper1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="home-container">
-            <div class="home-heading">
-              <h1>Hello, I'm <br />Umair Ahmed</h1>
-              <button><i class="fas fa-file"></i> Resume</button>
-            </div>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-github"></i> Github</a>
-              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
-          </div>
-          <div class="color-mode"><i class="fas fa-adjust"></i></div>
-          <div class="scroll"><h4>Swipe for more</h4></div>
-        </div>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<div class="swiper-container swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="home-container">
+						<div class="home-heading">
+							<h1>Hello, I'm <br />Umair Ahmed</h1>
+							<button><i class="fas fa-file"></i> Resume</button>
+						</div>
+						<div class="social-links">
+							<a target="_blank" href="https://github.com/Airhacker"
+								><i class="fab fa-github"></i> Github</a
+							>
+							<a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+						</div>
+					</div>
+					<div class="color-mode"><i class="fas fa-adjust"></i></div>
+					<div class="scroll"><h4>Swipe for more</h4></div>
+				</div>
 
-        <div class="swiper-slide">
-          <div class="projects-heading">
-            <h1>Projects</h1>
-            <p>Here are some of the projects I have worked on</p>
-          </div>
-          <div class="swiper-container swiper2">
-            <div class="swiper-wrapper wrapper2">
-              <div class="swiper-slide slide2">
-                <img src="./images/Aamir.jpg" alt="" />
-              </div>
-              <div class="swiper-slide slide2">
-                <img src="./images/math-tutor.jpg" alt="" />
-              </div>
-              <div class="swiper-slide slide2">
-                <img src="./images/mirror-mirror.jpg" alt="" />
-              </div>
-              <div class="swiper-slide slide2">
-                <img src="./images/Travelly.jpg" alt="" />
-              </div>
-            </div>
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="scroll"><h4>Swipe for more</h4></div>
-        </div>
+				<div class="swiper-slide project-container">
+					<div class="projects-heading">
+						<h1>Projects</h1>
+						<p>Here are some of the projects I have worked on</p>
+					</div>
 
-        <div class="swiper-slide">
-          <div class="contact-heading">
-            <h1>Contact Me</h1>
-          </div>
+					<div id="projects-container">
+						<img id="aamir" src="./images/Aamir.jpg" alt="" />
+					</div>
+				</div>
 
-          <form class="contact-form" action="">
-            <label for="text">
-              <input type="text" placeholder=" Name" required />
-            </label>
-            <label for="email">
-              <input type="email" placeholder=" Email" required />
-            </label>
-            <label for="message">
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="5"
-                placeholder=" Message"
-              ></textarea>
-            </label>
+				<div class="swiper-slide">
+					<div class="contact-heading">
+						<h1>Contact Me</h1>
+					</div>
 
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
+					<form class="contact-form" action="">
+						<label for="text">
+							<input type="text" placeholder=" Name" required />
+						</label>
+						<label for="email">
+							<input type="email" placeholder=" Email" required />
+						</label>
+						<label for="message">
+							<textarea
+								name="message"
+								id=""
+								cols="30"
+								rows="5"
+								placeholder=" Message"
+							></textarea>
+						</label>
 
-      <div class="swiper-pagination"></div>
-    </div>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
 
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
-    <script src="./scripts/app.js"></script>
-  </body>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
+		<script src="./scripts/app.js"></script>
+	</body>
 </html>

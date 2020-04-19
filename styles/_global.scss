@@ -1,80 +1,80 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 canvas {
-  display: block;
-  z-index: 10;
+	display: block;
+	z-index: 10;
 }
 
 a {
-  text-decoration: none;
-  color: $special-color;
+	text-decoration: none;
+	color: $special-color;
 }
 
 //Font Sizes
 
 h1 {
-  font-size: $header1;
-  letter-spacing: 0.25rem;
-  color: $special-color;
+	font-size: $header1;
+	letter-spacing: 0.25rem;
+	color: $special-color;
 }
 h2 {
-  font-size: $header2;
+	font-size: $header2;
 }
 h3 {
-  font-size: $header3;
+	font-size: $header3;
 }
 a,
 button,
 p {
-  font-size: $text;
+	font-size: $text;
 }
 
 // Page Settings
 
 .swiper1 {
-  width: 100%;
-  padding-top: 2.5rem;
-  padding-bottom: 0rem;
-  min-width: 100%;
-  min-height: 100vh;
-  background: $bg-color;
+	width: 100%;
+	padding-top: 2.5rem;
+	padding-bottom: 0rem;
+	min-width: 100%;
+	min-height: 100vh;
+	background: $bg-color;
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 85%;
-  min-height: 90vh;
-  max-height: 90vh;
-  background: $white;
-  border-radius: 50px;
-  @include nueOut;
+	background-position: center;
+	background-size: cover;
+	width: 85%;
+	min-height: 90vh;
+	max-height: 90vh;
+	background: $white;
+	border-radius: 50px;
+	@include nueOut;
 }
 
 .swiper-pagination-bullet {
-  background: $special-color;
+	background: $special-color;
 }
 
 // Icon Settings
 
 .fa-adjust {
-  color: $dark-color;
-  font-size: $text;
-  margin: 1rem;
-  border-radius: 50%;
-  cursor: pointer;
-  @include nueOut;
+	color: $dark-color;
+	font-size: $text;
+	margin: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	@include nueOut;
 }
