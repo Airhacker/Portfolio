@@ -6,6 +6,7 @@ const projectInfo = {
 		name: "Modeling By Aamir",
 		liveLink: "https://airhacker.github.io/ModelingByAamir/",
 		codeLink: "https://github.com/Airhacker/ModelingByAamir",
+		video: "./videos/aamir.webm",
 		projDesc:
 			"Modeling Portfolio website for a client, with emphasis on responsive design and animations. The website utilizes the Javascript library GSAP for all the animation.",
 	},
@@ -13,6 +14,7 @@ const projectInfo = {
 		name: "Math Tutoring Experts",
 		liveLink: "https://airhacker.github.io/Math-Tutoring-Experts/",
 		codeLink: "https://github.com/Airhacker/Math-Tutoring-Experts",
+		video: "./videos/tutor.webm",
 		projDesc:
 			"Landing page website for a math tutoring center. The website utilizes CSS animations, particularly with SVG's and is responsive for all media types.",
 	},
@@ -20,6 +22,7 @@ const projectInfo = {
 		name: "MIRROR-MIRROR.",
 		liveLink: "https://airhacker.github.io/MIRROR-MIRROR./",
 		codeLink: "https://github.com/Airhacker/MIRROR-MIRROR.",
+		video: "./videos/mirror.webm",
 		projDesc:
 			"Mens outfit prototyping website. Uses THREE.js to provide a 3D model, in order to see how the outift selected by the user is visually going to look.",
 	},
@@ -27,6 +30,7 @@ const projectInfo = {
 		name: "Travelly",
 		liveLink: "https://airhacker.github.io/Travelly/",
 		codeLink: "https://github.com/Airhacker/Travelly",
+		video: "./videos/travelly.webm",
 		projDesc:
 			"Website for a travel agency, used as a landing page to direct customers to all the available services.",
 	},
@@ -44,7 +48,8 @@ projectContainer.addEventListener("click", (event) => {
 				projectInfo.aamir.name,
 				projectInfo.aamir.liveLink,
 				projectInfo.aamir.codeLink,
-				projectInfo.aamir.projDesc
+				projectInfo.aamir.projDesc,
+				projectInfo.aamir.video
 			);
 			break;
 		case "tutor":
@@ -52,7 +57,8 @@ projectContainer.addEventListener("click", (event) => {
 				projectInfo.tutor.name,
 				projectInfo.tutor.liveLink,
 				projectInfo.tutor.codeLink,
-				projectInfo.tutor.projDesc
+				projectInfo.tutor.projDesc,
+				projectInfo.tutor.video
 			);
 			break;
 		case "mirror":
@@ -60,7 +66,8 @@ projectContainer.addEventListener("click", (event) => {
 				projectInfo.mirror.name,
 				projectInfo.mirror.liveLink,
 				projectInfo.mirror.codeLink,
-				projectInfo.mirror.projDesc
+				projectInfo.mirror.projDesc,
+				projectInfo.mirror.video
 			);
 			break;
 		case "travelly":
@@ -68,7 +75,8 @@ projectContainer.addEventListener("click", (event) => {
 				projectInfo.travelly.name,
 				projectInfo.travelly.liveLink,
 				projectInfo.travelly.codeLink,
-				projectInfo.travelly.projDesc
+				projectInfo.travelly.projDesc,
+				projectInfo.travelly.video
 			);
 			break;
 	}
@@ -78,15 +86,15 @@ projectContainer.addEventListener("click", (event) => {
 
 let projModal = document.querySelector(".project-modal");
 let projName = document.querySelector("#project-name");
-let projImg = document.querySelector("#modal-image");
+let projVideo = document.querySelector("#project-video");
 let projDesc = document.querySelector("#project-info");
 let liveBtn = document.querySelector("#live-btn");
 let codeBtn = document.querySelector("#code-btn");
 
-function projectModal(name, liveLink, codeLink, projInfo) {
+function projectModal(name, liveLink, codeLink, projInfo, video) {
 	// Modal General Settings
 	projModal.style.display = "block";
-	projModal.style.opacity = 0.9;
+	projModal.style.opacity = 1;
 	// Name of Project
 	projName.innerHTML = name;
 	// Description for Project
@@ -94,6 +102,9 @@ function projectModal(name, liveLink, codeLink, projInfo) {
 
 	liveBtn.href = liveLink;
 	codeBtn.href = codeLink;
+
+	projVideo.src = video;
+
 	console.log("I work");
 }
 
