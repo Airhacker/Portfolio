@@ -283,6 +283,106 @@ p {
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
 }
 
+.project-modal {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 50px;
+  top: 0;
+  opacity: 0;
+  background-color: black;
+}
+
+.modal-heading {
+  min-height: 10vh;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+  color: whitesmoke;
+  font-size: calc(2.5rem + 2vw);
+}
+
+.modal-heading h1 {
+  color: whitesmoke;
+  font-size: calc(2rem + 2vw);
+}
+
+.fa-times-circle {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.fa-times-circle:hover {
+  color: red;
+}
+
+.modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.modal-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-description p {
+  color: whitesmoke;
+  font-size: calc(1rem + 2vw);
+}
+
+.modal-description a {
+  color: whitesmoke;
+  font-size: calc(1rem + 2vw);
+  border: 3px solid whitesmoke;
+  border-radius: 25px;
+  padding: 1rem 1.5rem;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  margin: 1rem;
+}
+
+.modal-description a:hover {
+  border: 5px solid #344378;
+  color: #344378;
+}
+
 .contact-heading {
   text-align: center;
   min-height: 20vh;
