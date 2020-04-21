@@ -6,7 +6,7 @@ const projectInfo = {
 		name: "Modeling By Aamir",
 		liveLink: "https://airhacker.github.io/ModelingByAamir/",
 		codeLink: "https://github.com/Airhacker/ModelingByAamir",
-		video: "./videos/aamir.webm",
+		video: "./videos/aamir.mp4",
 		projDesc:
 			"Modeling Portfolio website for a client, with emphasis on responsive design and animations. The website utilizes the Javascript library GSAP for all the animation.",
 	},
@@ -14,7 +14,7 @@ const projectInfo = {
 		name: "Math Tutoring Experts",
 		liveLink: "https://airhacker.github.io/Math-Tutoring-Experts/",
 		codeLink: "https://github.com/Airhacker/Math-Tutoring-Experts",
-		video: "./videos/tutor.webm",
+		video: "./videos/tutor.mp4",
 		projDesc:
 			"Landing page website for a math tutoring center. The website utilizes CSS animations, particularly with SVG's and is responsive for all media types.",
 	},
@@ -22,7 +22,7 @@ const projectInfo = {
 		name: "MIRROR-MIRROR.",
 		liveLink: "https://airhacker.github.io/MIRROR-MIRROR./",
 		codeLink: "https://github.com/Airhacker/MIRROR-MIRROR.",
-		video: "./videos/mirror.webm",
+		video: "./videos/mirror.mp4",
 		projDesc:
 			"Mens outfit prototyping website. Uses THREE.js to provide a 3D model, in order to see how the outift selected by the user is visually going to look.",
 	},
@@ -30,7 +30,7 @@ const projectInfo = {
 		name: "Travelly",
 		liveLink: "https://airhacker.github.io/Travelly/",
 		codeLink: "https://github.com/Airhacker/Travelly",
-		video: "./videos/travelly.webm",
+		video: "./videos/travelly.mp4",
 		projDesc:
 			"Website for a travel agency, used as a landing page to direct customers to all the available services.",
 	},
