@@ -147,3 +147,31 @@
 		}
 	}
 }
+
+//Desktop Responsiveness
+
+@media screen and (min-width: 1100px) {
+	#projects-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		img {
+			width: 30%;
+
+			&:hover {
+				@include nueIn;
+				border: 3px solid $special-color;
+			}
+		}
+	}
+
+	// Modal
+
+	.project-modal {
+		border-radius: 0px;
+	}
+
+	.modal-content {
+		width: 70%;
+	}
+}

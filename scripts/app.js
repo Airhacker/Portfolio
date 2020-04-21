@@ -116,24 +116,37 @@ closeBtn.addEventListener("click", () => {
 	projModal.style.display = "none";
 });
 
-// Page swipe ---------------------------------------------------------------
-let swiper1 = new Swiper(".swiper1", {
-	effect: "coverflow",
-	loop: true,
-	grabCursor: false,
-	centeredSlides: true,
-	slidesPerView: "auto",
-	coverflowEffect: {
-		rotate: 50,
-		stretch: 0,
-		depth: 100,
-		modifier: 1,
-		slideShadows: true,
-		clickable: true,
-	},
-	pagination: {
-		el: ".swiper-pagination",
-		dynamicBullets: true,
-		clickable: true,
-	},
-});
+// Mobile Version
+if (screen.width <= 1100) {
+	// Page swipe ---------------------------------------------------------------
+	let swiper1 = new Swiper(".swiper1", {
+		effect: "coverflow",
+		loop: true,
+		grabCursor: false,
+		centeredSlides: true,
+		slidesPerView: "auto",
+		coverflowEffect: {
+			rotate: 50,
+			stretch: 0,
+			depth: 100,
+			modifier: 1,
+			slideShadows: true,
+			clickable: true,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			dynamicBullets: true,
+			clickable: true,
+		},
+	});
+} else {
+	//Scroll Text
+	const scrollText = document.querySelector(".scroll");
+	scrollText.firstChild.innerHTML = "Scroll for More";
+
+	// Page swipe ---------------------------------------------------------------
+	let swiper1 = new Swiper(".swiper1", {
+		direction: "vertical",
+		centeredSlides: true,
+	});
+}

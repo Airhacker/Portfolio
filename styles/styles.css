@@ -80,6 +80,22 @@ p {
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (min-width: 1100px) {
+  .swiper1 {
+    padding: 0;
+  }
+  .swiper-slide {
+    border-radius: 0px;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: auto;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
 .home-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +406,31 @@ p {
   color: #344378;
 }
 
+@media screen and (min-width: 1100px) {
+  #projects-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #projects-container img {
+    width: 30%;
+  }
+  #projects-container img:hover {
+    -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+            box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #344378;
+  }
+  .project-modal {
+    border-radius: 0px;
+  }
+  .modal-content {
+    width: 70%;
+  }
+}
+
 .contact-heading {
   text-align: center;
   min-height: 20vh;
@@ -465,5 +506,11 @@ p {
 .contact-form button:active {
   -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
           box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1100px) {
+  .contact-form {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
