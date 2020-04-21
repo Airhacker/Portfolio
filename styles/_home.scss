@@ -1,77 +1,77 @@
 .home-container {
-  display: flex;
-  width: 100%;
-  height: 80vh;
-  flex-direction: column;
-  align-items: space-evenly;
-  justify-content: space-evenly;
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	flex-direction: column;
+	align-items: space-evenly;
+	justify-content: space-evenly;
 }
 .home-heading {
-  min-height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	min-height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
-  h1 {
-    margin: 3rem 0rem;
-  }
+	h1 {
+		margin: 3rem 0rem;
+	}
 
-  button {
-    border-radius: 50px;
-    padding: 1rem 1.5rem;
-    transition: 0.25s ease;
-    background: none;
-    border: 3px solid transparent;
-    color: $special-color;
+	a {
+		border-radius: 50px;
+		padding: 1rem 1.5rem;
+		transition: 0.25s ease;
+		background: none;
+		border: 3px solid transparent;
+		color: $special-color;
 
-    @include nueOut;
+		@include nueOut;
 
-    &:hover {
-      border: 3px solid $special-color;
-    }
+		&:hover {
+			border: 3px solid $special-color;
+		}
 
-    &:active {
-      @include nueIn;
-    }
-  }
+		&:active {
+			@include nueIn;
+		}
+	}
 }
 
 .social-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
-  a {
-    font-size: $header4;
-    border-bottom: 3px solid transparent;
-    transition: 0.5s ease;
-    border-radius: 25px;
-    border: 3px solid transparent;
-    padding: 1rem;
+	a {
+		font-size: $header4;
+		border-bottom: 3px solid transparent;
+		transition: 0.5s ease;
+		border-radius: 25px;
+		border: 3px solid transparent;
+		padding: 1rem;
 
-    @include nueOut;
+		@include nueOut;
 
-    &:hover {
-      border: 3px solid $dark-color;
-    }
-  }
+		&:hover {
+			border: 3px solid $dark-color;
+		}
+	}
 }
 
 .scroll {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h4 {
-    font-size: $scroll-text;
-    color: $dark-color;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h4 {
+		font-size: $scroll-text;
+		color: $dark-color;
+	}
 }
 
 .color-mode {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

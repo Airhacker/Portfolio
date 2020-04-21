@@ -120,7 +120,7 @@ p {
   margin: 3rem 0rem;
 }
 
-.home-heading button {
+.home-heading a {
   border-radius: 50px;
   padding: 1rem 1.5rem;
   -webkit-transition: 0.25s ease;
@@ -132,11 +132,11 @@ p {
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
 }
 
-.home-heading button:hover {
+.home-heading a:hover {
   border: 3px solid #344378;
 }
 
-.home-heading button:active {
+.home-heading a:active {
   -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
           box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -307,6 +307,7 @@ p {
 .modal-heading h1 {
   color: whitesmoke;
   font-size: calc(2rem + 2vw);
+  max-width: 90%;
 }
 
 .fa-times-circle {
@@ -433,6 +434,12 @@ p {
   -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
   text-align: center;
+}
+
+.contact-form input:focus,
+.contact-form textArea:focus {
+  -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button {
