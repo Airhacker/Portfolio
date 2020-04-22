@@ -22,13 +22,13 @@ canvas {
 
 a {
   text-decoration: none;
-  color: #344378;
+  color: #ecf0f3;
 }
 
 h1 {
   font-size: calc(4rem + 2vw);
   letter-spacing: 0.25rem;
-  color: #344378;
+  color: #ecf0f3;
 }
 
 h2 {
@@ -39,10 +39,16 @@ h3 {
   font-size: calc(2.5rem + 2vw);
 }
 
+h4 {
+  color: #ecf0f3;
+  font-size: calc(0.5rem + 2vw);
+}
+
 a,
 button,
 p {
   font-size: calc(2rem + 2vw);
+  color: #ecf0f3;
 }
 
 .swiper1 {
@@ -51,7 +57,7 @@ p {
   padding-bottom: 0rem;
   min-width: 100%;
   min-height: 100vh;
-  background: #ebecf0;
+  background: #292d32;
 }
 
 .swiper-slide {
@@ -60,24 +66,24 @@ p {
   width: 85%;
   min-height: 90vh;
   max-height: 90vh;
-  background: #ffffff;
+  background: #292d32;
   border-radius: 50px;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
 }
 
 .swiper-pagination-bullet {
-  background: #344378;
+  background: #ecf0f3;
 }
 
 .fa-adjust {
-  color: #1f295a;
+  color: #ecf0f3;
   font-size: calc(2rem + 2vw);
   margin: 1rem;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
 }
 
 @media screen and (min-width: 1100px) {
@@ -143,18 +149,18 @@ p {
   transition: 0.25s ease;
   background: none;
   border: 3px solid transparent;
-  color: #344378;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  color: #ecf0f3;
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
 }
 
 .home-heading a:hover {
-  border: 3px solid #344378;
+  border: 3px solid #ecf0f3;
 }
 
 .home-heading a:active {
-  -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+          box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
 }
 
 .social-links {
@@ -176,12 +182,12 @@ p {
   border-radius: 25px;
   border: 3px solid transparent;
   padding: 1rem;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
 }
 
 .social-links a:hover {
-  border: 3px solid #1f295a;
+  border: 3px solid #ecf0f3;
 }
 
 .scroll {
@@ -194,11 +200,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.scroll h4 {
-  font-size: calc(0.5rem + 2vw);
-  color: #1f295a;
 }
 
 .color-mode {
@@ -238,8 +239,8 @@ p {
 }
 
 #projects-container {
-  -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+          box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,7 +256,7 @@ p {
   min-height: 70vh;
   max-height: 70vh;
   border-radius: 25px;
-  background-color: rgba(245, 245, 245, 0.75);
+  background-color: #2a2d32;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -265,8 +266,8 @@ p {
 }
 
 #projects-container img {
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
   width: 90%;
   height: 30%;
   -o-object-fit: cover;
@@ -295,8 +296,8 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
 }
 
 .project-modal {
@@ -308,7 +309,7 @@ p {
   border-radius: 50px;
   top: 0;
   opacity: 0;
-  background-color: black;
+  background-color: #ecf0f3;
 }
 
 .modal-heading {
@@ -316,12 +317,12 @@ p {
   width: 100%;
   margin: 1rem auto;
   text-align: center;
-  color: whitesmoke;
+  color: #292d32;
   font-size: calc(2.5rem + 2vw);
 }
 
 .modal-heading h1 {
-  color: whitesmoke;
+  color: #292d32;
   font-size: calc(2rem + 2vw);
   max-width: 90%;
 }
@@ -386,14 +387,14 @@ p {
 }
 
 .modal-description p {
-  color: whitesmoke;
+  color: #292d32;
   font-size: calc(1rem + 2vw);
 }
 
 .modal-description a {
-  color: whitesmoke;
+  color: #292d32;
   font-size: calc(1rem + 2vw);
-  border: 3px solid whitesmoke;
+  border: 3px solid #292d32;
   border-radius: 25px;
   padding: 1rem 1.5rem;
   -webkit-transition: 0.25s ease;
@@ -402,8 +403,8 @@ p {
 }
 
 .modal-description a:hover {
-  border: 5px solid #344378;
-  color: #344378;
+  border: 5px solid #ecf0f3;
+  color: #ecf0f3;
 }
 
 @media screen and (min-width: 1100px) {
@@ -419,9 +420,9 @@ p {
     width: 30%;
   }
   #projects-container img:hover {
-    -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-            box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-    border: 3px solid #344378;
+    -webkit-box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+            box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+    border: 3px solid #ecf0f3;
   }
   .project-modal {
     border-radius: 0px;
@@ -445,7 +446,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #344378;
+  color: #ecf0f3;
 }
 
 .contact-form {
@@ -470,17 +471,18 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 25px;
-  color: #344378;
+  color: #ecf0f3;
+  background-color: #2a2d32;
   padding: 1rem 0rem;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+          box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
   text-align: center;
 }
 
 .contact-form input:focus,
 .contact-form textArea:focus {
-  -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+          box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
 }
 
 .contact-form button {
@@ -490,22 +492,24 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 25px;
-  color: #344378;
+  color: #ecf0f3;
   padding: 1rem 1.5rem;
   background: none;
   font-weight: bold;
   border: 3px solid transparent;
-  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), -6px -6px 10px rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  -webkit-box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
+          box-shadow: -18px -18px 20px #30343a, 18px 18px 20px #24262b;
 }
 
 .contact-form button:hover {
-  border: 3px solid #344378;
+  border: 3px solid #ecf0f3;
 }
 
 .contact-form button:active {
-  -webkit-box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.8), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
+          box-shadow: inset -18px -18px 30px #30343a, inset 18px 18px 30px #24262b;
 }
 
 @media screen and (min-width: 1100px) {

@@ -20,7 +20,7 @@ canvas {
 
 a {
 	text-decoration: none;
-	color: $special-color;
+	color: $text-color;
 }
 
 //Font Sizes
@@ -28,7 +28,7 @@ a {
 h1 {
 	font-size: $header1;
 	letter-spacing: 0.25rem;
-	color: $special-color;
+	color: $text-color;
 }
 h2 {
 	font-size: $header2;
@@ -36,10 +36,15 @@ h2 {
 h3 {
 	font-size: $header3;
 }
+h4 {
+	color: $text-color;
+	font-size: $scroll-text;
+}
 a,
 button,
 p {
 	font-size: $text;
+	color: $text-color;
 }
 
 // Page Settings
@@ -59,19 +64,19 @@ p {
 	width: 85%;
 	min-height: 90vh;
 	max-height: 90vh;
-	background: $white;
+	background: $bg-color;
 	border-radius: 50px;
 	@include nueOut;
 }
 
 .swiper-pagination-bullet {
-	background: $special-color;
+	background: $text-color;
 }
 
 // Icon Settings
 
 .fa-adjust {
-	color: $dark-color;
+	color: $text-color;
 	font-size: $text;
 	margin: 1rem;
 	border-radius: 50%;

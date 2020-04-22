@@ -1,3 +1,4 @@
+
 .home-container {
 	display: flex;
 	width: 100%;
@@ -24,12 +25,12 @@
 		transition: 0.25s ease;
 		background: none;
 		border: 3px solid transparent;
-		color: $special-color;
+		color: $text-color;
 
 		@include nueOut;
 
 		&:hover {
-			border: 3px solid $special-color;
+			border: 3px solid $text-color;
 		}
 
 		&:active {
@@ -54,7 +55,7 @@
 		@include nueOut;
 
 		&:hover {
-			border: 3px solid $dark-color;
+			border: 3px solid $text-color;
 		}
 	}
 }
@@ -63,10 +64,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	h4 {
-		font-size: $scroll-text;
-		color: $dark-color;
-	}
 }
 
 .color-mode {

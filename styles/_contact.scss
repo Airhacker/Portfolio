@@ -6,7 +6,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: $special-color;
+	color: $text-color;
 }
 
 .contact-form {
@@ -24,9 +24,10 @@
 		cursor: pointer;
 		border: none;
 		border-radius: 25px;
-		color: $special-color;
+		color: $text-color;
+		background-color: $button-in-color;
 		padding: 1rem 0rem;
-		@include nueOut;
+		@include nueIn;
 		text-align: center;
 
 		&:focus {
@@ -41,16 +42,17 @@
 		cursor: pointer;
 		border: none;
 		border-radius: 25px;
-		color: $special-color;
+		color: $text-color;
 		padding: 1rem 1.5rem;
 		background: none;
 		font-weight: bold;
 		border: 3px solid transparent;
+		transition: 0.25s ease;
 
 		@include nueOut;
 
 		&:hover {
-			border: 3px solid $special-color;
+			border: 3px solid $text-color;
 		}
 
 		&:active {
